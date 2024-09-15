@@ -1,0 +1,391 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* .dancing-script {
+	font-family: "Dancing Script", cursive;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+} */
+
+body {
+	background-image: url(../Images/background-image.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: relative;
+}
+
+.first-section {
+	height: 1000px;
+	padding-top: 20px;
+}
+
+.first-section h2 {
+	font-family: "Dancing Script", cursive;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	font-size: 90px;
+	margin-bottom: 50px;
+	color: white;
+}
+
+.first-section nav{
+	width: 60%;
+	height: auto;
+	margin: auto;
+	margin-bottom: 200px;
+	padding: 20px 10px;
+	display: flex;
+	justify-content: center;
+	background-color: lightblue;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.first-section ul{
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+.first-section ul li{
+
+}
+
+.first-section ul li:last-child{
+	margin-right: 0px;
+}
+
+.first-section ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	transition: .5s;
+}
+
+.first-section ul li a:hover{
+	color: rgb(161, 161, 161);
+}
+
+.first-section .intro-par{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	font-size: 80px;
+	font-weight: normal;
+	color: rgb(255, 249, 249);
+}
+
+
+.second-section{
+	/* height: 800px; */
+	background-color: rgb(243, 243, 243);
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.second-section-main-div{
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-column-gap: 35px;
+}
+
+.second-section-main-div .div-1, .div-2{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 35px;
+}
+
+.small-div, .big-div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.second-section-main-div .small-div{
+	height: 270px;
+	border: solid black thick;
+}
+.second-section-main-div .big-div{
+	height: 500px;
+}
+
+.second-section .div-1 .big-div{
+	background-image: url(../Images/image1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.second-section .div-2 .big-div{
+	background-image: url(../Images/image2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.big-div .first-span{
+	font-size: 30px;
+	font-family: "Dancing Script", cursive;
+	font-weight: bold;
+	color: white;
+	background-color: rgba(128, 128, 128, 0.454);
+	width: 30%;
+	margin-bottom: 20px;
+	
+}
+.big-div .second-span{
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(128, 128, 128, 0.426);
+	width: 50%;
+	margin-bottom: 20px;	
+}
+.big-div a{
+	width: 30%;
+	padding: 10px 22px;
+	background-color: rgba(128, 128, 128, 0.338);
+	border: solid thin white;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	transition: 1s ease;
+}
+.big-div a:hover{
+	border: none;
+	background-color: blue;
+}
+
+.small-div .first-span{
+	font-size: 30px;
+	color: gray;
+	font-family: "Dancing Script", cursive;
+	margin-bottom: 17px;
+}
+.small-div .second-span{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.small-div a{
+	background-color: rgba(128, 128, 128, 0.883);
+	width: 30%;
+	padding: 10px 22px;
+	color: white;
+	text-decoration: none;
+	transition: 0.7s ease;
+}
+
+.small-div a:hover{
+	padding: 12px 29px;
+	background-color: blue;
+}
+
+.third-section{
+	background-color: rgb(223, 239, 244);
+	padding-top: 65px;
+	padding-bottom: 85px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 50px;
+}
+
+.third-section .blog-sections{
+	width: 80%;
+	height: 370px;
+	background-color: white;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-radius: 3px;
+}
+
+.blog-sections .image-link{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
+.blog-preview{
+	display: flex;
+	color: black;
+	flex-direction: column;
+	padding: 20px 30px;
+	position: relative;
+}
+
+.blog-preview .profile{
+	margin-bottom: 20px;
+}
+
+.blog-preview .preview-link{
+	color: auto;
+	text-decoration: none;
+	width: 100%;
+}
+
+.preview-link .preview-heading{
+	margin-bottom: 20px;
+}
+
+.blog-preview .comment-section{
+	margin-top: 15px;
+	color: rgb(58, 58, 58);
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	left: 30px;
+}
+
+.comment-section hr{
+	margin-bottom: 15px;
+}
+
+.comment-section button{
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.blog-preview a{
+	margin-left: 10px;
+	margin-right: 250px;
+	text-decoration: none;
+	color: rgb(58, 58, 58);
+}
+
+footer{
+	background-color: black;
+	padding-top: 50px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+
+footer h4{
+	font-size: 25px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+footer form{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 130px;
+}
+
+footer form input{
+	background: rgba(38, 38, 38, 0.616);
+	border: solid thin white;
+	height: 45px;
+	color: white;
+}
+
+.email-input{
+	margin-right: 10px;
+	width: 35%;
+	padding-left: 20px;
+	color: white;
+	font-size: 17px;
+	transition: 0.2s;
+}
+
+.email-input:hover{
+	outline: solid 1.8px white;
+}
+
+.email-input:active{
+	border-radius: 0px;
+}
+
+.email-input::placeholder{
+	color: white;
+}
+
+.submit-button-input{
+	padding: 0px 20px;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.socials{
+	margin-bottom: 20px;
+}
+
+.socials ul{
+	list-style-type: none;
+}
+
+.socials ul li{
+	float: left;
+	margin-right: 20px;
+}
+
+.socials ul li:last-child{
+	margin-right: 0px;
+}
+
+.socials ul li img{
+	width: 25px;
+	height: 25px;
+}
+
+.copyright-section{
+	background-color: rgb(37, 37, 37);
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+	padding: 12px 0px;
+	font-size: 13px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright-section .wix{
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/* The following styles are fixed to the body of the webpage: */
+
+.advertise-link{
+	position: fixed;
+	left: 25px;
+	bottom: 25px;
+	background-color: rgb(40, 90, 255);
+	color: white;
+	text-decoration: none;
+	padding: 10px 25px;
+	border-top-left-radius: 13px ;
+	border-top-right-radius: 13px;
+	transition: .8s;
+}
+
+.advertise-link:hover{
+	background-color: rgb(11, 42, 146);
+}
+
+
+.socials-list{
+	position: fixed;
+	top: 40px;
+	right: 45px;
+	list-style-type: none;
+}
+
+.socials-list img{
+	width: 30px;
+	height: 30px;
+}
