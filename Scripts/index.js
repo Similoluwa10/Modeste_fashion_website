@@ -7,6 +7,5 @@ submitButtonInput.addEventListener("click", function () {
 		localStorage.setItem("New Email", [emailInput.value])
 		alert('Subscription successful!!')
 	}
-
 })
 
